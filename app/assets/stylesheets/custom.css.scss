@@ -29,6 +29,10 @@
 }
 html, body{
     height: 100%;
+    margin-left: -33px;
+    margin-right: -33px;
+    margin-top: -33px;
+    overflow: hidden;
 }
 #page-content{
     flex: 1 0 auto;
