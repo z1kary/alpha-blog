@@ -10,8 +10,8 @@
                   </div>
                   <div class="card-body">
                     <div class="card-text text-left"><%= simple_format(@article.description) %></div>
-                    <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-outline-info" %>
-                    <%= link_to 'Delete', article_path(@article.id), class: "btn btn-outline-danger", method: :delete, data: { confirm: "Are you sure ?" } %>
+                    <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-outline-info text-primary" %>
+                    <%= link_to 'Delete', article_path(@article.id), class: "btn btn-outline-danger text-danger", method: :delete, data: { confirm: "Are you sure ?" } %>
                   </div>
                   <div class="card-footer text-muted">
                     <small>Created <%= time_ago_in_words(@article.created_at) %> ago, edited <%= "#{time_ago_in_words(@article.update_at)} ago" if @article.update_at %> ago</small>
